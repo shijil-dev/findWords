@@ -1,0 +1,7 @@
+<div class="container m-5 ">
+  <h1 class="text-success m-5">-- FindWords --</h1>
+  <form class="row align-items-center gy-3" type="submit" autocomplete="off">
+    <label>Type here to find words..</label>
+    <input name="q" type="text" placeholder="type.." class="form-control" hx-post="/search" hx-target="#res" hx-trigger="input changed delay:20ms" hx-swap="outerHTML">
+    <div id="res"></div>
+</div>
