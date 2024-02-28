@@ -2,7 +2,7 @@
 
 This is a simple htmx on rails application to search words from words_dictionary.json file
 
-* dependencies
+## dependencies
 - ruby
 - json
 - bootstrap
