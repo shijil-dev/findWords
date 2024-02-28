@@ -75,4 +75,4 @@ gem "gingerice", "~> 1.3"
 
 gem "json", "~> 2.7"
 
-gem "ruby-spellchecker", "~> 0.1.5"
+
