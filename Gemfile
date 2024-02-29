@@ -71,8 +71,4 @@ end
 gem "bootstrap", "~> 5.3"
 gem "sassc-rails", "~> 2.1"
 
-gem "gingerice", "~> 1.3"
-
-gem "json", "~> 2.7"
-
 

@@ -4,7 +4,6 @@ This is a simple htmx on rails application to search words from words_dictionary
 
 ## dependencies
 - ruby
-- json
 - bootstrap
 - htmx
 - sassc-rails

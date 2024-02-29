@@ -79,7 +79,6 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (10.4.16.0)
       execjs (~> 2)
-    awesome_print (1.9.2)
     base64 (0.2.0)
     bigdecimal (3.1.6)
     bindex (0.8.1)
@@ -111,9 +110,6 @@ GEM
     erubi (1.12.0)
     execjs (2.9.1)
     ffi (1.16.3)
-    gingerice (1.3.0)
-      addressable
-      awesome_print
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -129,7 +125,6 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    json (2.7.1)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -217,7 +212,6 @@ GEM
     reline (0.4.3)
       io-console (~> 0.5)
     rexml (3.2.6)
-    ruby-spellchecker (0.1.5)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sassc (2.4.0)
@@ -286,13 +280,10 @@ DEPENDENCIES
   capybara
   debug
   error_highlight (>= 0.4.0)
-  gingerice (~> 1.3)
   importmap-rails
   jbuilder
-  json (~> 2.7)
   puma (>= 5.0)
   rails (~> 7.1.3, >= 7.1.3.2)
-  ruby-spellchecker (~> 0.1.5)
   sassc-rails (~> 2.1)
   selenium-webdriver
   sprockets-rails
