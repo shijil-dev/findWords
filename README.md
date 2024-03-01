@@ -7,6 +7,7 @@ This is a simple htmx on rails application to search words from words_dictionary
 - bootstrap
 - htmx
 - sassc-rails
+- clipboard
 
 # How to run on local
 * clone the repo
