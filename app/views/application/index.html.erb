@@ -2,8 +2,9 @@
   <h1 class="text-success m-5">-- FindWords --</h1>
   <form class="row align-items-center gy-3" type="submit" autocomplete="off">
     <label>Type here to find words..</label>
-    <input name="q" type="text" placeholder="type.." class="form-control" hx-post="/search" hx-target="#res" hx-trigger="input changed delay:500ms" hx-swap="outerHTML">
+    <input name="q" type="text" placeholder="type.." class="form-control w-50" hx-post="/search" hx-target="#res" hx-trigger="input changed delay:500ms" hx-swap="outerHTML">
   </form>
-  <div id="words" class="p-2 text-danger"></div>
+  
+  <div class="p-2">Copied Text is <span id="words" class="text-danger fw-bold"></span></div>
   <div id="res"></div>
 </div>
