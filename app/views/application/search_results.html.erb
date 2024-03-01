@@ -1,6 +1,6 @@
 <div id="res" class=""> 
   <% @res.each do |s| %>
-    <%= s%> ,
+    <button class="btn rounded btn-outline-success" hx-post="/clipboard" hx-vals='{"val": "<%= s%>"}'><%= s%></button> 
   <% end%>
 </div>
 

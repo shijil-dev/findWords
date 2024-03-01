@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "application#index"
   post "/search" => "application#search_results"
+  post "/clipboard" => "application#clipboard"
+
 end
