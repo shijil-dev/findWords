@@ -3,5 +3,7 @@
   <form class="row align-items-center gy-3" type="submit" autocomplete="off">
     <label>Type here to find words..</label>
     <input name="q" type="text" placeholder="type.." class="form-control" hx-post="/search" hx-target="#res" hx-trigger="input changed delay:500ms" hx-swap="outerHTML">
-    <div id="res"></div>
+  </form>
+  <div id="words" class="p-2 text-danger"></div>
+  <div id="res"></div>
 </div>

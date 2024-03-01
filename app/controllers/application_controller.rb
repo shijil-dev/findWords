@@ -19,6 +19,6 @@ class ApplicationController < ActionController::Base
   def clipboard
     val=params['val']
     Clipboard.copy val
-    render plain:val
+    render plain: val
   end
 end
