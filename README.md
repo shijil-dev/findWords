@@ -68,12 +68,18 @@ I am not going to write everything here, this is just a subset of their document
 
 htmx gives superpowers to html tags by these attributes,
 
-every tags can make ajax requests by using `hx-get="/route", hx-post="/route",hx-put="/route" , hx-patch="/route" and hx-delete="/route"`,
-
-it is self explanatory
+every tags can make ajax requests by using `hx-get="/route",
+`hx-post="/route"`,
+`hx-put="/route"` ,
+` hx-patch="/route"` and
+`hx-delete="/route"`
+is self explanatory
 ### hx-target
-the responses can be rendered to the tag with id="id" hx-target="#id"
-if you have not used hx-target then it will be on the same tag
+The responses can be targetted on to the tag with `id="id"`
+you can target any tags you want using `hx-target="#id"`
+`hx-target="this"` make target on self with any of its childrens request(I think)
+`hx-target="body"` targets on `<body>`
+if you have not used `hx-target` then it will be on the same tag
 ### hx-swap
 specify how to replace the target
 
