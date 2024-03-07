@@ -48,7 +48,7 @@ and then import it on your `app/javascript/application.js`:
 import "htmx.org"
 ```
 
-### Using Import Maps (e.g importmap-rails)
+### Using Import Maps
 
 Pin the dependency into the importmap:
 
