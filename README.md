@@ -34,7 +34,7 @@ add it to the appropriate directory
 ```html
 <script src="/path/to/htmx.min.js"></script>
 ```
-### Using a JS Bundler (e.g jsbundling-rails or webpacker)
+### Using a JS Bundler
 
 Add the htmx.org package using Yarn:
 
