@@ -77,8 +77,11 @@ is self explanatory
 ### hx-target
 The responses can be targetted on to the tag with `id="id"`
 you can target any tags you want using `hx-target="#id"`
+
 `hx-target="this"` make target on self with any of its childrens request(I think)
+
 `hx-target="body"` targets on `<body>`
+
 if you have not used `hx-target` then it will be on the same tag
 ### hx-swap
 specify how to replace the target
