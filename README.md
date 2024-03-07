@@ -64,7 +64,7 @@ import "htmx.org"
 # htmx attributes
 
 please check [htmx.org](https://htmx.org/) first.
-I am not going to write everything here, this is just a subset of their documentation
+This is just a subset of their documentation
 
 htmx gives superpowers to html tags by these attributes,
 
