@@ -1,6 +1,0 @@
-<div id="res" class=""> 
-  <% @res.each do |s| %>
-    <button class="btn rounded btn-outline-success" hx-post="/clipboard" hx-vals='{"val": "<%= s%>"}' hx-target="#words"><%= s%></button> 
-  <% end%>
-</div>
-
