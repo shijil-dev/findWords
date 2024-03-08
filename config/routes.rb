@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
-  post "/search" => "application#search_results"
-  post "/clipboard" => "application#clipboard"
+  post "/search" => "home#search_results"
+  post "/clipboard" => "home#clipboard"
 
 end
