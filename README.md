@@ -61,19 +61,26 @@ and then import it on your `app/javascript/application.js`:
 ```javascript
 import "htmx.org"
 ```
+### rails extra
+Add the `X-CSRF-Token` to the `hx-headers` attributes in your `<body>` tag so it's added by
+default in XHR requests done by htmx:
+
+```erb
+<body hx-headers='{"X-CSRF-Token": "<%= form_authenticity_token %>"}'>
+```
 # htmx attributes
 
 please check [htmx.org](https://htmx.org/) first.
 This is just a subset of their documentation
 
-htmx gives superpowers to html tags by these attributes,
+htmx gives superpowers to normal html tags,
 
 every tags can make ajax requests by using `hx-get="/route",
 `hx-post="/route"`,
 `hx-put="/route"` ,
 ` hx-patch="/route"` and
 `hx-delete="/route"`
-is self explanatory
+is self-explanatory
 ### hx-target
 The responses can be targetted on to the tag with `id="id"`
 you can target any tags you want using `hx-target="#id"`
@@ -82,9 +89,12 @@ you can target any tags you want using `hx-target="#id"`
 
 `hx-target="body"` targets on `<body>`
 
-if you have not used `hx-target` then it will be on the same tag
+if you have not used `hx-target` then response will be on the same tag
 ### hx-swap
 specify how to replace the target
+```
+<div hx-get="/test" hx-target=="#target" hx-swap="innerHTML">
+```
 
 - innerHTML - Replace the inner html of the target element (default)
 - outerHTML - Replace the entire target element with the response
@@ -106,8 +116,7 @@ find more [hx-triggers](https://htmx.org/attributes/hx-trigger/)
 ```
 hx-on:click="alert('Clicked!')"
 ```
-shows alert box
-
+The hx-on* attributes allow you to embed scripts inline to respond to events directly on an element; similar to the onevent properties found in HTML, such as onClick.
 ### hx-confirm
 ```
 hx-confirm="Are you sure?"
@@ -124,11 +133,17 @@ shows a prompt before request
 ```
 hx-vals='{"myVal": "My Value"}'
 ```
-allows you to add to the parameters that will be submitted with an AJAX request
+allows you to add values to submit with the request
 
 ### hx-boost
 ```
 hx-boost:"true"
 ```
 it enhances anchor and form tags to send ajax requests
+
+### hx-disable
+```
+hx-disable="true"
+```
+disables htmx processing for the given node and any children nodes
 
