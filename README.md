@@ -92,7 +92,7 @@ you can target any tags you want using `hx-target="#id"`
 if you have not used `hx-target` then response will be on the same tag
 ### hx-swap
 specify how to replace the target
-```
+```html
 <div hx-get="/test" hx-target=="#target" hx-swap="innerHTML">
 ```
 
