@@ -75,11 +75,12 @@ This is just a subset of their documentation
 
 htmx gives superpowers to normal html tags,
 
-every tags can make ajax requests by using `hx-get="/route",
-`hx-post="/route"`,
-`hx-put="/route"` ,
-` hx-patch="/route"` and
-`hx-delete="/route"`
+every tags can make ajax requests by using
+``hx-get="/route"``,
+``hx-post="/route"``,
+``hx-put="/route"`` ,
+`` hx-patch="/route"`` and
+``hx-delete="/route"``
 is self-explanatory
 ### hx-target
 The responses can be targetted on to the tag with `id="id"`
