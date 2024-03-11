@@ -103,17 +103,32 @@ polling `hx-trigger="every 1s"`
 find more [hx-triggers](https://htmx.org/attributes/hx-trigger/)
 
 ### hx-on
-`hx-on:click="alert('Clicked!')"` shows alert box
+```
+hx-on:click="alert('Clicked!')"
+```
+shows alert box
 
 ### hx-confirm
-`hx-confirm="Are you sure?"` confirm an action before request
+```
+hx-confirm="Are you sure?"
+```
+confirm an action before request
 
 ### hx-prompt
-`hx-prompt="Enter something"` shows a prompt before request
+```
+hx-prompt="Enter something"
+```
+shows a prompt before request
 
 ### hx-vals
-`hx-vals='{"myVal": "My Value"}'` allows you to add to the parameters that will be submitted with an AJAX request
+```
+hx-vals='{"myVal": "My Value"}'
+```
+allows you to add to the parameters that will be submitted with an AJAX request
 
 ### hx-boost
-`hx-boost:"true"` it enhances anchor and form tags to send ajax requests
+```
+hx-boost:"true"
+```
+it enhances anchor and form tags to send ajax requests
 
