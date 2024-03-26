@@ -2,7 +2,7 @@
   <% if !@empty %>
     <% if @res.present? %>
       <% @res.each do |s| %>
-        <button class="btn rounded btn-outline-success" hx-post="/clipboard" hx-vals='{"val": "<%= s%>"}' hx-target="#words"><%= s%></button> 
+        <button class="btn rounded btn-outline-success" hx-get="/clipboard" hx-vals='{"val": "<%= s%>"}' hx-target="#words"><%= s%></button> 
       <% end %>
     <% else %>
       <span class="text-danger">Sorry no matching words</span>

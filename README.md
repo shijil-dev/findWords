@@ -95,6 +95,8 @@ if you have not used `hx-target` then response will be on the same tag
 specify how to replace the target
 ```html
 <div hx-get="/test" hx-target=="#target" hx-swap="innerHTML">
+...
+</div>
 ```
 
 - innerHTML - Replace the inner html of the target element (default)
@@ -104,6 +106,14 @@ specify how to replace the target
 - beforeend - Insert the response after the last child of the target element
 - afterend - Insert the response after the target element
 - delete - Deletes the target element regardless of the response
+
+### hx-select
+This will allow you to select some specific part of the response.
+```html
+<div hx-get="/test" hx-target=="#target" hx-select="#id_you_like_to_select">
+...
+</div>
+```
 
 ### hx-trigger
 this can do a lot of things, it specifies what event is going to trigger the requests
@@ -122,6 +132,10 @@ The hx-on* attributes allow you to embed scripts inline to respond to events dir
 ```
 hx-confirm="Are you sure?"
 ```
+```html
+<div hx-delete="/test/1" hx-confirm="Are you sure?">
+```
+
 confirm an action before request
 
 ### hx-prompt
@@ -134,7 +148,7 @@ shows a prompt before request
 ```
 hx-vals='{"myVal": "My Value"}'
 ```
-allows you to add values to submit with the request
+allows you to include some values in the request
 
 ### hx-boost
 ```
