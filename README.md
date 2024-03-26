@@ -129,11 +129,11 @@ hx-on:click="alert('Clicked!')"
 ```
 The hx-on* attributes allow you to embed scripts inline to respond to events directly on an element; similar to the onevent properties found in HTML, such as onClick.
 ### hx-confirm
-```
-hx-confirm="Are you sure?"
-```
+
 ```html
 <div hx-delete="/test/1" hx-confirm="Are you sure?">
+...
+</div>
 ```
 
 confirm an action before request
@@ -145,14 +145,24 @@ hx-prompt="Enter something"
 shows a prompt before request
 
 ### hx-vals
+```html
+<button hx-post="/test" hx-vals='{"myVal": "My Value"}'>MyButton</button>
 ```
-hx-vals='{"myVal": "My Value"}'
-```
-allows you to include some values in the request
+allows you to add custom values in the request
 
-### hx-boost
+### hx-include
+allows you to include additonal element values
+```html
+<form hx-post="/test" hx-target=="#target" hx-include="[name='my_name']">
+...
+</form>
+<input name="my_name" type="text"/>
 ```
-hx-boost:"true"
+### hx-boost
+```html
+<div hx-boost:"true">
+    <a href="/test">This is an HTMX request</a>
+</div>
 ```
 it enhances anchor and form tags to send ajax requests
 
